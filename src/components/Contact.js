@@ -159,19 +159,19 @@ const Contact = () => {
               <ContactIcon>
                 <FontAwesomeIcon icon={faEnvelope} />
               </ContactIcon>
-              <ContactText>email@example.com</ContactText>
+              <ContactText>ocoskun684@gmail.com</ContactText>
             </ContactItem>
             <ContactItem>
               <ContactIcon>
                 <FontAwesomeIcon icon={faPhone} />
               </ContactIcon>
-              <ContactText>+90 555 123 4567</ContactText>
+              <ContactText>+90 537 439 5983</ContactText>
             </ContactItem>
             <ContactItem>
               <ContactIcon>
                 <FontAwesomeIcon icon={faMapMarkerAlt} />
               </ContactIcon>
-              <ContactText>İstanbul, Türkiye</ContactText>
+              <ContactText>Balikesir, Türkiye</ContactText>
             </ContactItem>
           </ContactInfo>
           <ContactForm onSubmit={handleSubmit}>

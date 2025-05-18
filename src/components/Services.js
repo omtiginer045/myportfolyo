@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode, faMobile, faServer, faDatabase } from '@fortawesome/free-solid-svg-icons';
+import {faCode, faDatabase, faRocket} from '@fortawesome/free-solid-svg-icons';
 
 const ServicesSection = styled.section`
   padding: 100px 2rem;
@@ -60,22 +60,22 @@ const Services = () => {
     {
       icon: faCode,
       title: 'Web Geliştirme',
-      description: 'Modern ve responsive web siteleri geliştiriyorum. React, Vue.js gibi modern framework\'ler kullanarak kullanıcı dostu arayüzler oluşturuyorum.'
+      description: 'Modern ve responsive web siteleri geliştiriyorum. HTML, CSS, JavaScript gibi modern framework\'ler kullanarak kullanıcı dostu arayüzler oluşturuyorum.'
     },
     {
-      icon: faMobile,
-      title: 'Mobil Uyumluluk',
+      icon: faCode,
+      title: 'Görsel Programlama',
       description: 'Tüm web sitelerimi mobil cihazlara uyumlu olarak geliştiriyorum. Responsive tasarım prensiplerini kullanarak her ekran boyutunda mükemmel görünüm sağlıyorum.'
     },
     {
-      icon: faServer,
-      title: 'Backend Geliştirme',
-      description: 'Node.js ve Express.js kullanarak güçlü ve ölçeklenebilir backend sistemleri geliştiriyorum. RESTful API\'ler ve mikroservis mimarileri oluşturuyorum.'
+      icon: faRocket,
+      title: 'Roket Geliştirme',
+      description: 'Balıkesir Üniveritesi\'nin öğrenci topluluğu olan Misya\'nın roket takımında Arduino kullanarak sensörleri çalıştırıp roketin algoritmasını yazabiliyorum.'
     },
     {
       icon: faDatabase,
       title: 'Veritabanı Yönetimi',
-      description: 'MongoDB, PostgreSQL ve MySQL gibi veritabanları ile çalışıyorum. Veritabanı optimizasyonu ve güvenliği konularında uzmanım.'
+      description: 'SQlite veritabanı ile çalışıyorum. Veritabanına ekleme çıkarma yapma .'
     }
   ];
 

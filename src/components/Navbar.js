@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
 
+
 const Nav = styled.nav`
   position: fixed;
   top: 0;
@@ -90,7 +91,7 @@ const Navbar = () => {
           <MenuItem to="home" smooth={true} duration={500}>Ana Sayfa</MenuItem>
           <MenuItem to="about" smooth={true} duration={500}>Ben Kimim?</MenuItem>
           <MenuItem to="services" smooth={true} duration={500}>Neler Yapabilirim?</MenuItem>
-          <MenuItem to="portfolio" smooth={true} duration={500}>Portfolyo</MenuItem>
+          <MenuItem to="portfolyo" smooth={true} duration={500}>Portfolyo</MenuItem>
           <MenuItem to="contact" smooth={true} duration={500}>İletişim</MenuItem>
         </MenuItems>
       </NavContainer>

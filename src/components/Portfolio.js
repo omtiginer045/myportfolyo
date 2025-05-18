@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import roketImage from '../assets/roket.jpg';
+import soruBankasiImage from '../assets/soruBankasi.jpg';
+import notepadImage from '../assets/notDefteri.jpg';
+import turkiyeImage from '../assets/turkiyebolge.jpg';
 
 const PortfolioSection = styled.section`
   padding: 100px 2rem;
@@ -46,23 +50,44 @@ const PortfolioGrid = styled.div`
   gap: 2rem;
 `;
 
-const PortfolioItem = styled.div`
+const PortfolioItem = styled.a`
   position: relative;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
+  height: 250px;
+  background-color: #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 
   &:hover {
     .overlay {
       opacity: 1;
+    }
+    .title {
+      opacity: 0;
     }
   }
 `;
 
 const PortfolioImage = styled.img`
   width: 100%;
-  height: 250px;
+  height: 100%;
   object-fit: cover;
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+`;
+
+const Title = styled.h3`
+  position: absolute;
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+  transition: opacity 0.3s ease;
+  z-index: 1;
 `;
 
 const Overlay = styled.div`
@@ -82,15 +107,10 @@ const Overlay = styled.div`
   text-align: center;
 `;
 
-const ProjectTitle = styled.h3`
-  color: #ffffff;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-`;
-
 const ProjectDescription = styled.p`
   color: #ffffff;
   font-size: 1rem;
+  line-height: 1.5;
 `;
 
 const Portfolio = () => {
@@ -99,73 +119,81 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: 'E-Ticaret Sitesi',
-      description: 'React ve Node.js ile geliştirilmiş modern bir e-ticaret platformu',
-      image: 'https://via.placeholder.com/400x300',
-      category: 'web'
+      title: 'Roket Algoritması',
+      description: 'Arduino IDE kullanarak basınç, GPS ve ivme-gyro sensörlerini kullanarak optimize  çalışan bir roket algoritması',
+      image: roketImage,
+      category: 'Roket',
+      githubUrl: 'https://github.com/omtiginer045/Roket_algoritma/tree/master'
     },
     {
       id: 2,
-      title: 'Mobil Uygulama',
-      description: 'React Native ile geliştirilmiş cross-platform mobil uygulama',
-      image: 'https://via.placeholder.com/400x300',
-      category: 'mobile'
+      title: 'Soru Bankası',
+      description: 'Görsel programlama ile geliştirilmiş, öğrencilerin soru çözebileceği ve kendilerini test edebileceği bir uygulama',
+      image: soruBankasiImage,
+      category: 'Görsel Programlama',
+      githubUrl: 'https://github.com/omtiginer045/soru_bankasi/tree/master'
     },
     {
       id: 3,
-      title: 'Dashboard',
-      description: 'Vue.js ve Chart.js ile geliştirilmiş analitik dashboard',
-      image: 'https://via.placeholder.com/400x300',
-      category: 'web'
+      title: 'NotePad',
+      description: 'Görsel programlama ile geliştirilmiş, metin düzenleme ve kaydetme özelliklerine sahip basit bir not defteri uygulaması',
+      image: notepadImage,
+      category: 'Görsel Programlama',
+      githubUrl: 'https://github.com/omtiginer045/not_defteri/tree/master'
     },
     {
       id: 4,
-      title: 'API Servisi',
-      description: 'Node.js ve Express ile geliştirilmiş RESTful API',
-      image: 'https://via.placeholder.com/400x300',
-      category: 'backend'
+      title: 'Turkiye Bolgeleri',
+      description: 'Görsel programlama ile geliştirilmiş, seçilen şehrin bölgesinin kültürel ve iklimsel yapısı hakkında bilgi veren ve ayrıca iki bölgeyi karşılaştırma imkanı sunan bir uygulama.',
+      image: turkiyeImage,
+      category: 'Görsel Programlama',
+      githubUrl: 'https://github.com/omtiginer045/turkiye_bolgeleri/tree/master'
     }
   ];
 
   const filters = [
     { id: 'all', label: 'Tümü' },
-    { id: 'web', label: 'Web' },
-    { id: 'mobile', label: 'Mobil' },
-    { id: 'backend', label: 'Backend' }
+    { id: 'Roket', label: 'Roket' },
+    { id: 'Görsel Programlama', label: 'Görsel Programlama' }
   ];
 
   const filteredProjects = activeFilter === 'all'
-    ? projects
-    : projects.filter(project => project.category === activeFilter);
+      ? projects
+      : projects.filter(project => project.category === activeFilter);
 
   return (
-    <PortfolioSection id="portfolio">
-      <Container>
-        <SectionTitle>Portfolyo</SectionTitle>
-        <FilterButtons>
-          {filters.map(filter => (
-            <FilterButton
-              key={filter.id}
-              active={activeFilter === filter.id}
-              onClick={() => setActiveFilter(filter.id)}
-            >
-              {filter.label}
-            </FilterButton>
-          ))}
-        </FilterButtons>
-        <PortfolioGrid>
-          {filteredProjects.map(project => (
-            <PortfolioItem key={project.id}>
-              <PortfolioImage src={project.image} alt={project.title} />
-              <Overlay className="overlay">
-                <ProjectTitle>{project.title}</ProjectTitle>
-                <ProjectDescription>{project.description}</ProjectDescription>
-              </Overlay>
-            </PortfolioItem>
-          ))}
-        </PortfolioGrid>
-      </Container>
-    </PortfolioSection>
+      <PortfolioSection id="portfolio">
+        <Container>
+          <SectionTitle>Portfolyo</SectionTitle>
+          <FilterButtons>
+            {filters.map(filter => (
+                <FilterButton
+                    key={filter.id}
+                    active={activeFilter === filter.id}
+                    onClick={() => setActiveFilter(filter.id)}
+                >
+                  {filter.label}
+                </FilterButton>
+            ))}
+          </FilterButtons>
+          <PortfolioGrid>
+            {filteredProjects.map(project => (
+                <PortfolioItem
+                    key={project.id}
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                  <PortfolioImage src={project.image} alt={project.title} />
+                  <Title className="title">{project.title}</Title>
+                  <Overlay className="overlay">
+                    <ProjectDescription>{project.description}</ProjectDescription>
+                  </Overlay>
+                </PortfolioItem>
+            ))}
+          </PortfolioGrid>
+        </Container>
+      </PortfolioSection>
   );
 };
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import myselfImage from '../assets/ben.jpg';
 
 const AboutSection = styled.section`
   padding: 100px 2rem;
@@ -84,10 +85,13 @@ const SkillLevel = styled.div`
 
 const About = () => {
   const skills = [
-    { name: 'HTML/CSS', level: 90 },
-    { name: 'JavaScript', level: 85 },
-    { name: 'React', level: 80 },
-    { name: 'Node.js', level: 75 },
+    { name: 'HTML/CSS', level: 80 },
+    { name: 'JavaScript', level: 75 },
+    { name: 'React', level: 50 },
+    { name: 'Node.js', level: 60 },
+    { name: 'Java', level: 85 },
+    { name: 'C#', level: 90 },
+    { name: 'Arduino', level: 90 },
   ];
 
   return (
@@ -96,16 +100,18 @@ const About = () => {
         <SectionTitle>Ben Kimim?</SectionTitle>
         <AboutContent>
           <AboutImage>
-            <img src="https://via.placeholder.com/500x500" alt="Profile" />
+            <img src={myselfImage} alt="Ömer" />
           </AboutImage>
           <AboutText>
-            <h3>Full Stack Web Developer</h3>
+            <h3>Software Engineer</h3>
             <p>
-              Merhaba! Ben [Adınız], tutkulu bir Full Stack Web Developer'ım. Modern web teknolojileri
+              Merhaba! Ben Ömer, tutkulu bir Developer'ım. Modern web teknolojileri
               kullanarak kullanıcı dostu ve yenilikçi web uygulamaları geliştiriyorum.
             </p>
+            <p>C/C++ tabanlı olan Arduino'da sensörler üzerinden veriler alıp bu veriler
+            üzerinden algoritmalar yazabiliyorum.</p>
             <p>
-              Yazılım geliştirme yolculuğuma [Yıl] yılında başladım ve o zamandan beri sürekli
+              Yazılım geliştirme yolculuğuma 2023 yılında başladım ve o zamandan beri sürekli
               kendimi geliştirmeye ve yeni teknolojileri öğrenmeye devam ediyorum.
             </p>
             <Skills>

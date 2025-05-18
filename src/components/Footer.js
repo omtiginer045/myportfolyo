@@ -36,13 +36,13 @@ const Footer = () => {
   return (
     <FooterSection>
       <SocialLinks>
-        <SocialLink href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <SocialLink href="hhttps://x.com/christopheerLee?t=1wEedpOC6CFBr32-wYMeTw&s=08 " target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faTwitter} />
         </SocialLink>
-        <SocialLink href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <SocialLink href="https://github.com/omtiginer045" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} />
         </SocialLink>
-        <SocialLink href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+        <SocialLink href="https://www.facebook.com/omersuleyman.coskun" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faFacebook} />
         </SocialLink>
       </SocialLinks>

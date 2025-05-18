@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons';
 
+
 const HeroSection = styled.section`
   height: 100vh;
   display: flex;
@@ -57,7 +58,7 @@ const Hero = () => {
   return (
     <HeroSection id="home">
       <HeroContent>
-        <Title>Merhaba, Ben [Adınız]</Title>
+        <Title>Merhaba, Ben Ömer</Title>
         <Subtitle>Full Stack Web Developer</Subtitle>
         <SocialLinks>
           <SocialLink href="https://twitter.com" target="_blank" rel="noopener noreferrer">
