@@ -138,9 +138,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Burada form verilerini işleyebilir veya bir API'ye gönderebilirsiniz
     console.log('Form data:', formData);
-    // Form gönderildikten sonra formu temizle
     setFormData({
       name: '',
       email: '',

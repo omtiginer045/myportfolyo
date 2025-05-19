@@ -148,7 +148,7 @@ const Portfolio = () => {
       image: turkiyeImage,
       category: 'Görsel Programlama',
       githubUrl: 'https://github.com/omtiginer045/turkiye_bolgeleri/tree/master'
-    }
+    },
   ];
 
   const filters = [
@@ -162,7 +162,7 @@ const Portfolio = () => {
       : projects.filter(project => project.category === activeFilter);
 
   return (
-      <PortfolioSection id="portfolio">
+      <PortfolioSection id="portfolyo">
         <Container>
           <SectionTitle>Portfolyo</SectionTitle>
           <FilterButtons>
