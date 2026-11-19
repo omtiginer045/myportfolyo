@@ -36,7 +36,7 @@ export const projects = [
     highlight: '2.lik',
     description:
       "Rekabetçi bir game jam'de oyun mekaniklerini nesne yönelimli, ölçeklenebilir bir kod mimarisiyle hızla prototipledik ve takım olarak 2. olduk.",
-    tags: ['Unity', 'C#', 'OOP'],
+    tags: ['Oyun Geliştirme', 'OOP', 'Takım Çalışması'],
   },
   {
     title: 'GameJam Oyun Prototipi',

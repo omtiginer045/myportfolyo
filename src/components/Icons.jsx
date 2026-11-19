@@ -39,13 +39,6 @@ export const MailIcon = (props) => (
   </Svg>
 )
 
-export const ExternalIcon = (props) => (
-  <Svg {...props}>
-    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-    <path d="M15 3h6v6M10 14 21 3" />
-  </Svg>
-)
-
 export const MenuIcon = (props) => (
   <Svg {...props}>
     <path d="M3 6h18M3 12h18M3 18h18" />

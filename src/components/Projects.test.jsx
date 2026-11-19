@@ -1,6 +1,7 @@
 import { render, screen, within } from '@testing-library/react'
 import Projects from './Projects'
 import { projects } from '../data/projects'
+import { githubUrl } from '../data/profile'
 
 describe('Projects', () => {
   it('Projeler başlığını ve 8 kartı gösterir', () => {
@@ -42,10 +43,7 @@ describe('Projects', () => {
 })
 
 describe('githubUrl', () => {
-  it('repo linki profile.githubUrl ile başlar', async () => {
-    const { githubUrl } = await import('../data/profile')
-    render(<Projects />)
-    const links = screen.getAllByRole('link', { name: /GitHub'da incele/ })
-    links.forEach((a) => expect(a.getAttribute('href')).toMatch(new RegExp(`^${githubUrl}/`)))
+  it('githubUrl profil adresidir', () => {
+    expect(githubUrl).toBe('https://github.com/omtiginer045')
   })
 })

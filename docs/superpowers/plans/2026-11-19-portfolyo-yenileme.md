@@ -12,7 +12,7 @@
 
 ## Global Constraints
 - Dil: Türkçe; `<html lang="tr">`.
-- Sitede telefon numarası yok (`537` / `05374395983` hiçbir yerde görünmez — CV PDF hariç).
+- Sitede telefon numarası yok (`537` / telefon numarası hiçbir yerde görünmez — CV PDF hariç).
 - Dış linkler: `target="_blank" rel="noopener noreferrer"`.
 - E-posta: `ocoskun684@gmail.com`; LinkedIn: `https://www.linkedin.com/in/omercoskun45`; GitHub: `https://github.com/omtiginer045`.
 - CV dosyası: `public/Omer-Coskun-CV.pdf`, link `/Omer-Coskun-CV.pdf` + `download`.

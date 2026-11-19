@@ -9,7 +9,7 @@ export default function About() {
         Hakkımda
       </h2>
       <div className="about">
-        <img className="about__photo" src={photo} alt="Ömer Coşkun" />
+        <img className="about__photo" src={photo} alt="Ömer Coşkun" width={682} height={1186} />
         <div className="about__text">
           {about.map((p) => (
             <p key={p}>{p}</p>

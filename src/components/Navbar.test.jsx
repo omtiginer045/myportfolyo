@@ -14,6 +14,16 @@ describe('Navbar', () => {
     expect(button).toHaveAttribute('aria-expanded', 'false')
   })
 
+  test('Escape tuşu açık menüyü kapatır', () => {
+    render(<Navbar />)
+    const button = screen.getByRole('button', { name: 'Menüyü aç/kapat' })
+    fireEvent.click(button)
+    expect(button).toHaveAttribute('aria-expanded', 'true')
+
+    fireEvent.keyDown(document, { key: 'Escape' })
+    expect(button).toHaveAttribute('aria-expanded', 'false')
+  })
+
   test('marka #top adresine bağlanır', () => {
     render(<Navbar />)
     expect(screen.getByRole('link', { name: 'Ömer Coşkun' })).toHaveAttribute('href', '#top')

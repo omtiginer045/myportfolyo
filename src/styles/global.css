@@ -7,6 +7,7 @@
   --border: #23232d;
   --radius: 12px;
   --max-w: 1100px;
+  --gutter: 1.5rem;
 }
 
 *,
@@ -18,8 +19,13 @@
 }
 
 html {
-  scroll-behavior: smooth;
   scroll-padding-top: 4.5rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 body {
@@ -47,7 +53,8 @@ ul {
 .section {
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 5rem 1.5rem;
+  padding-block: 5rem;
+  padding-inline: var(--gutter);
 }
 
 .section-title {
@@ -57,7 +64,11 @@ ul {
 }
 
 @media (max-width: 768px) {
+  :root {
+    --gutter: 1.25rem;
+  }
+
   .section {
-    padding: 3.5rem 1.25rem;
+    padding-block: 3.5rem;
   }
 }

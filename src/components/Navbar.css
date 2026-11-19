@@ -2,6 +2,7 @@
   position: sticky;
   top: 0;
   z-index: 10;
+  background: var(--bg);
   background: color-mix(in srgb, var(--bg) 85%, transparent);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
@@ -15,7 +16,7 @@
   max-width: var(--max-w);
   height: 4rem;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 var(--gutter);
 }
 
 .navbar__brand {
@@ -63,7 +64,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    padding: 1rem 1.5rem;
+    padding: 1rem var(--gutter);
     background: var(--surface);
     border-bottom: 1px solid var(--border);
   }

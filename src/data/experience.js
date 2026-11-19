@@ -1,7 +1,7 @@
 export const experience = [
   {
     type: 'İş',
-    title: 'Yazılım Mühendisliği Stajyeri',
+    title: 'Yazılım Mühendisliği Stajyeri (2 dönem)',
     org: 'Balıkesir Üniversitesi Bilgi İşlem Daire Başkanlığı',
     period: 'Temmuz 2026 – Eylül 2026',
     location: 'Balıkesir',
