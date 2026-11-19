@@ -19,3 +19,8 @@ export const sections = [
   { id: 'experience', label: 'Deneyim' },
   { id: 'contact', label: 'İletişim' },
 ]
+
+export const about = [
+  "Balıkesir Üniversitesi Bilgisayar Mühendisliği 4. sınıf öğrencisiyim. Balıkesir Üniversitesi Bilgi İşlem Daire Başkanlığı'ndaki stajlarımda React ve PHP ile kurumsal web uygulamaları geliştirdim, MySQL veritabanları tasarladım ve Docker ile dağıtım süreçlerini hızlandırdım.",
+  "Bugün odağımda yapay zekâ ve siber güvenlik var: bitirme projemde makine öğrenmesi tabanlı bir saldırı tespit sistemi geliştiriyor, TUSAŞ LIFT UP programında kompozit parçalar için AI-ML destekli optimizasyon üzerinde çalışıyorum. Hackathon ve game jam'lerde hızlı prototiplemeyi ve takım halinde üretmeyi seviyorum.",
+]

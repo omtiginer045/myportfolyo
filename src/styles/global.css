@@ -42,3 +42,15 @@ a {
 ul {
   list-style: none;
 }
+
+.section {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+}
+
+.section-title {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
