@@ -1,0 +1,36 @@
+.extras__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.extras__card {
+  min-width: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  overflow-wrap: anywhere;
+}
+
+.extras__title {
+  margin-bottom: 1rem;
+  font-size: 1.15rem;
+}
+
+.extras__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.extras__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.extras__detail {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
