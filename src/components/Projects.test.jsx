@@ -40,3 +40,12 @@ describe('Projects', () => {
     }
   })
 })
+
+describe('githubUrl', () => {
+  it('repo linki profile.githubUrl ile başlar', async () => {
+    const { githubUrl } = await import('../data/profile')
+    render(<Projects />)
+    const links = screen.getAllByRole('link', { name: /GitHub'da incele/ })
+    links.forEach((a) => expect(a.getAttribute('href')).toMatch(new RegExp(`^${githubUrl}/`)))
+  })
+})

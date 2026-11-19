@@ -1,8 +1,8 @@
 .hero {
   display: flex;
   align-items: center;
-  min-height: calc(100vh - 4rem);
-  padding: 4rem 1.5rem;
+  min-height: min(calc(100vh - 4rem), 40rem);
+  padding: 3rem 1.5rem;
 }
 
 .hero__inner {

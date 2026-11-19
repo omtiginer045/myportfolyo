@@ -1,8 +1,6 @@
-import { profile } from '../data/profile'
+import { githubUrl } from '../data/profile'
 import { GithubIcon } from './Icons'
 import './ProjectCard.css'
-
-const githubBase = profile.links.find((link) => link.label === 'GitHub').href
 
 export default function ProjectCard({ title, context, description, tags, status, highlight, repo }) {
   return (
@@ -28,7 +26,7 @@ export default function ProjectCard({ title, context, description, tags, status,
       {repo && (
         <a
           className="project-card__link"
-          href={`${githubBase}/${repo}`}
+          href={`${githubUrl}/${repo}`}
           target="_blank"
           rel="noopener noreferrer"
         >

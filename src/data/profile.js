@@ -1,3 +1,5 @@
+export const githubUrl = 'https://github.com/omtiginer045'
+
 export const profile = {
   name: 'Ömer Coşkun',
   title: 'Bilgisayar Mühendisliği 4. Sınıf Öğrencisi · Yazılım Geliştirici',
@@ -7,7 +9,7 @@ export const profile = {
   email: 'ocoskun684@gmail.com',
   cvUrl: '/Omer-Coskun-CV.pdf',
   links: [
-    { label: 'GitHub', href: 'https://github.com/omtiginer045', icon: 'github' },
+    { label: 'GitHub', href: githubUrl, icon: 'github' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/omercoskun45', icon: 'linkedin' },
   ],
 }

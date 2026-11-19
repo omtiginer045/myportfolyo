@@ -7,6 +7,7 @@
 .about__photo {
   width: 100%;
   max-width: 320px;
+  height: auto;
   flex-shrink: 0;
   border-radius: var(--radius);
   border: 1px solid var(--border);
@@ -23,5 +24,10 @@
 @media (max-width: 768px) {
   .about {
     flex-direction: column;
+  }
+
+  .about__photo {
+    max-width: 280px;
+    margin: 0 auto;
   }
 }
